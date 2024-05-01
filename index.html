@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title> </title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo">The planets</a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/?planet=mercury" class="header__nav-link">mercury</a></li>
+          <li class="header__nav-item"><a href="/?planet=venus" class="header__nav-link">venus</a></li>
+          <li class="header__nav-item"><a href="/?planet=earth" class="header__nav-link">earth</a></li>
+          <li class="header__nav-item"><a href="/?planet=mars" class="header__nav-link">mars</a></li>
+          <li class="header__nav-item"><a href="/?planet=jupiter" class="header__nav-link">jupiter</a></li>
+          <li class="header__nav-item"><a href="/?planet=saturn" class="header__nav-link">saturn</a></li>
+          <li class="header__nav-item"><a href="/?planet=uranus" class="header__nav-link">uranus</a></li>
+          <li class="header__nav-item"><a href="/?planet=neptune" class="header__nav-link">neptune</a></li>
+        </ul>
+      </nav>
+      <button class="planet-menu"><span></span></button>
+    </div>
+  </header>
+  <main class="content">
+    <section class="content__planet planet">
+      <div class="planet__container">
+        <div class="planet__images"></div>
+        <div class="planet__col">
+          <article class="planet__info planet-info">
+            <h1 class="planet__info-title title"></h1>
+          </article>
+          <div class="planet__buttons">
+            <button class="planet__button button active"><span>01</span>overview</button>
+            <button class="planet__button button"><span>02</span>Internal Structure</button>
+            <button class="planet__button button"><span>03</span>Surface Geology</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content__planet-data planet-data">
+      <div class="planet-data__container">
+        <article class="planet-data__item">
+          <h4 class="planet-data__title">ROTATION TIME</h4>
+          <p class="planet-data__value" id="rotation"></p>
+        </article>
+        <article class="planet-data__item">
+          <h4 class="planet-data__title">REVOLUTION TIME</h4>
+          <p class="planet-data__value" id="revolution"></p>
+        </article>
+        <article class="planet-data__item">
+          <h4 class="planet-data__title">radius</h4>
+          <p class="planet-data__value" id="radius"></p>
+        </article>
+        <article class="planet-data__item">
+          <h4 class="planet-data__title">AVERAGE TEMP.</h4>
+          <p class="planet-data__value" id="temperature"></p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
